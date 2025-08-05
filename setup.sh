@@ -28,7 +28,7 @@ if [ -d "shazampi-eink" ]; then
 fi
 echo
 echo "###### Clone shazampi-eink git"
-git clone https://github.com/ravi72munde/shazampi-eink
+git clone https://github.com/marc9876/shazampi-eink
 echo "Switching into installation directory"
 cd shazampi-eink
 install_path=$(pwd)
@@ -84,12 +84,12 @@ do
             echo "model = inky" >> ${install_path}/config/eink_options.ini
             break
             ;;
-        "Pimoroni Inky Impression 7.3 (800x480)")
+        "Waveshare Spectra 6 7.3 (800x480)")
             echo "[DEFAULT]" >> ${install_path}/config/eink_options.ini
             echo "width = 800" >> ${install_path}/config/eink_options.ini
             echo "height = 480" >> ${install_path}/config/eink_options.ini
             echo "album_cover_small_px = 300" >> ${install_path}/config/eink_options.ini
-            echo "model = inky" >> ${install_path}/config/eink_options.ini
+            echo "model = spektra" >> ${install_path}/config/eink_options.ini
             break
             ;;
         *)

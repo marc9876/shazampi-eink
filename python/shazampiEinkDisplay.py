@@ -170,7 +170,7 @@ class ShazampiEinkDisplay:
 
                     inky.show()
                     time.sleep(1.0)
-            if self.config.get('DEFAULT', 'model') == 'waveshare4':
+            if self.config.get('DEFAULT', 'model') == 'spektra':
                 epd = self.wave4.EPD()
                 epd.init()
                 epd.Clear()
@@ -214,7 +214,7 @@ class ShazampiEinkDisplay:
                 inky = self.inky_auto()
                 inky.set_image(image, saturation=saturation)
                 inky.show()
-            if self.config.get('DEFAULT', 'model') == 'waveshare4':
+            if self.config.get('DEFAULT', 'model') == 'spektra':
                 epd = self.wave4.EPD()
                 epd.init()
                 epd.display(epd.getbuffer(self._convert_image_wave(image)))
